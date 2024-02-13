@@ -13,7 +13,14 @@ public class AListGeneric {
 
     }
 
+    public AListGeneric(){
+        maxSize = 0;
+        size = 0;
+        listArray = new Object[size];
+
+    }
     public Object[] grow(Object[] arr){
+        maxSize += 1;
         int newSize = maxSize * 2;
         Object listArr[] = new Object[newSize];
         for(int i = 0; i < arr.length; i++){
@@ -28,17 +35,16 @@ public class AListGeneric {
             listArray[size] = p;
             size++;
         } else if (size == maxSize){
-            listArray= grow(listArray);
+            listArray = grow(listArray);
             listArray[size] = p;
-
-
+            size++;
         }
 
     }
 
     public void listRemove(int pos){
         if(pos == size){
-            size --;
+            size--;
         } else if (pos < size-1 ){
             for(int i = pos; i < size-1; i++){
                 listArray[i] = listArray[i+1]; //shift down elements
@@ -49,10 +55,13 @@ public class AListGeneric {
 
     @Override
     public String toString() {
-        return "AList{" +
-                "listArray=" + Arrays.toString(listArray) +
-                ", size=" + size +
-                ", maxSize=" + maxSize +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < size; i++) {
+            sb.append(listArray[i].toString());
+            if (i < listArray.length - 1) {
+                sb.append("\n");
+            }
+        }
+        return sb.toString();
     }
 }

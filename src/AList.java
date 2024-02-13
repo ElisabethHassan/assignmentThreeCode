@@ -13,7 +13,15 @@ public class AList {
 
     }
 
+    public AList(){
+        maxSize = 0;
+        size = 0;
+        listArray = new Book[maxSize];
+
+    }
+
     public Book[] grow(Book[] arr){
+        maxSize += 1;
         int newSize = maxSize * 2;
         Book listArr[] = new Book[newSize];
         for(int i = 0; i < arr.length; i++){
@@ -23,6 +31,7 @@ public class AList {
         return listArr;
     }
     public void listAdd(Book p){
+
         if(size < maxSize){
             listArray[size] = p;
             size++;
