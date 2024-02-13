@@ -14,7 +14,7 @@ public class AList {
     }
 
     public Book[] grow(Book[] arr){
-        Book listArr[] = new Book[maxSize * 2];
+        Book listArr[] = new Book[maxSize * 5];
         for(int i = 0; i < arr.length; i++){
             listArr[i] = arr[i];
         }
@@ -45,10 +45,13 @@ public class AList {
 
     @Override
     public String toString() {
-        return "AList{" +
-                "listArray=" + Arrays.toString(listArray) +
-                ", size=" + size +
-                ", maxSize=" + maxSize +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < size; i++) {
+            sb.append(listArray[i].toString());
+            if (i < listArray.length - 1) {
+                sb.append("\n");
+            }
+        }
+        return sb.toString();
     }
 }

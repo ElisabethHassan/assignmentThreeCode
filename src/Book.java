@@ -10,4 +10,9 @@ public class Book {
         this.author = author;
 
     }
+
+    public String toString() {
+        return title + " by " + author + " ($" + price + ")";
+    }
+
 }
