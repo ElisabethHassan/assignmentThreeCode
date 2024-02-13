@@ -14,13 +14,16 @@ public class AListGeneric {
     }
 
     public Object[] grow(Object[] arr){
-        Object listArr[] = new Object[maxSize * 2];
+        int newSize = maxSize * 2;
+        Object listArr[] = new Object[newSize];
         for(int i = 0; i < arr.length; i++){
             listArr[i] = arr[i];
         }
+        maxSize = newSize;
         return listArr;
     }
-    public void listAdd(Book p){
+    
+    public void listAdd(Object p){
         if(size < maxSize){
             listArray[size] = p;
             size++;

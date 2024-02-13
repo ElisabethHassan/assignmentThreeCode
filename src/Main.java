@@ -15,15 +15,15 @@ public class Main {
 //        System.out.println(listGeneric.toString());
 
 
-        DLList dlList = new DLList();
-        dlList.listAdd(new Book("Harry Potter", "JK Rowling", 12.30));
-        dlList.listAdd(new Book("Never Let Me Go", "Ishua Kaje", 45.25));
-        dlList.listAdd(new Book("Brooklyn", "Honey Bee", 17.90));
-        System.out.println(dlList.toString());
-        dlList.listRemove(0);
-        dlList.listRemove(0);
-        dlList.listRemove(0);
-        System.out.println(dlList.toString());
+//        DLList dlList = new DLList();
+//        dlList.listAdd(new Book("Harry Potter", "JK Rowling", 12.30));
+//        dlList.listAdd(new Book("Never Let Me Go", "Ishua Kaje", 45.25));
+//        dlList.listAdd(new Book("Brooklyn", "Honey Bee", 17.90));
+//        System.out.println(dlList.toString());
+//        dlList.listRemove(0);
+//        dlList.listRemove(0);
+//        dlList.listRemove(0);
+//        System.out.println(dlList.toString());
 
 
         //todo: fix grow function and how much it's supposed to grow
@@ -35,13 +35,13 @@ public class Main {
 
 //        System.out.println("List");
 //        System.out.println(list.toString());
-//        System.out.println(alist.toString());
+        System.out.println(alist.toString());
 
-//        alist.listRemove(1);
+        alist.listRemove(1);
 //        list.listRemove(1);
 
 //        System.out.println("List");
-//        System.out.println(alist.toString());
+        System.out.println(alist.toString());
 //        System.out.println(list.toString());
 
     }

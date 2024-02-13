@@ -14,10 +14,12 @@ public class AList {
     }
 
     public Book[] grow(Book[] arr){
-        Book listArr[] = new Book[maxSize * 5];
+        int newSize = maxSize * 2;
+        Book listArr[] = new Book[newSize];
         for(int i = 0; i < arr.length; i++){
             listArr[i] = arr[i];
         }
+        maxSize = newSize;
         return listArr;
     }
     public void listAdd(Book p){
