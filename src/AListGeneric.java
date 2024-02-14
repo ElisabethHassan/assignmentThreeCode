@@ -1,28 +1,28 @@
 import java.util.Arrays;
 
-public class AListGeneric {
+public class AListGeneric<T> {
 
-    private Object listArray[];
+    private T[] listArray;
     private int size;
     private int maxSize;
 
     public AListGeneric(int mSize){
         maxSize = mSize;
         size = 0;
-        listArray = new Object[size];
+        listArray = (T[]) new Object[maxSize];
 
     }
 
     public AListGeneric(){
         maxSize = 0;
         size = 0;
-        listArray = new Object[size];
+        listArray = (T[]) new Object[maxSize];
 
     }
-    public Object[] grow(Object[] arr){
+    public T[] grow(T[] arr){
         maxSize += 1;
         int newSize = maxSize * 2;
-        Object listArr[] = new Object[newSize];
+        T listArr[] = (T[]) new Object[newSize];
         for(int i = 0; i < arr.length; i++){
             listArr[i] = arr[i];
         }
@@ -30,7 +30,7 @@ public class AListGeneric {
         return listArr;
     }
     
-    public void listAdd(Object p){
+    public void listAdd(T p){
         if(size < maxSize){
             listArray[size] = p;
             size++;
@@ -42,14 +42,15 @@ public class AListGeneric {
 
     }
 
+
     public void listRemove(int pos){
-        if(pos == size){
-            size--;
+        if(pos == size-1){
+            size --;
         } else if (pos < size-1 ){
             for(int i = pos; i < size-1; i++){
                 listArray[i] = listArray[i+1]; //shift down elements
-                size--;
             }
+            size--;
         } else System.out.println("Not a valid position");
     }
 

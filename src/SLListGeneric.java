@@ -1,20 +1,20 @@
-class SLGNode {
-    Object data;
+class SLGNode<T> {
+    T data;
     SLGNode next;
 
-    public SLGNode(Object data){
+    public SLGNode(T data){
         this.data = data;
     }
 }
 
-public class SLListGeneric {
+public class SLListGeneric<T> {
     private SLGNode head;
 
     public SLListGeneric() {
         this.head = null;
     }
 
-    public void listAdd(Object p){
+    public void listAdd(T p){
         SLGNode node = new SLGNode(p);
         if(head == null){
             head = node;

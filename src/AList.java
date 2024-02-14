@@ -30,6 +30,7 @@ public class AList {
         maxSize = newSize;
         return listArr;
     }
+
     public void listAdd(Book p){
 
         if(size < maxSize){
@@ -43,8 +44,9 @@ public class AList {
 
     }
 
+    //[2, 3, 4, 5]
     public void listRemove(int pos){
-        if(pos == size){
+        if(pos == size-1){
             size --;
         } else if (pos < size-1 ){
             for(int i = pos; i < size-1; i++){

@@ -1,21 +1,21 @@
-class DLGNode{
+class DLGNode<T>{
     DLGNode next;
     DLGNode prev;
-    Object data;
-    public DLGNode(Object data){
+    T data;
+    public DLGNode(T data){
         this.data = data;
         this.prev = null;
         this.next = null;
     }
 }
 
-public class DLListGeneric {
+public class DLListGeneric<T> {
     private DLGNode head;
     public DLListGeneric(){
         head = null;
     }
 
-    public void listAdd(Object p){
+    public void listAdd(T p){
         DLGNode newNode = new DLGNode(p);
 
         if(head == null){

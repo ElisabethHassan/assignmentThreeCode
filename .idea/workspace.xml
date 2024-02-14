@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70c46e30-3c99-423e-a0cf-73b3192b19b2" name="Changes" comment="fixed AList">
+    <list default="true" id="70c46e30-3c99-423e-a0cf-73b3192b19b2" name="Changes" comment="fix grow function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AListGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AListGeneric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DLListGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DLListGeneric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SLListGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SLListGeneric.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +72,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707788354108</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix grow function">
+      <created>1707789955366</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707789955366</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SLList  &amp; AList implementation" />
     <MESSAGE value="add generics" />
     <MESSAGE value="fixed AList" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed AList" />
+    <MESSAGE value="fix grow function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix grow function" />
   </component>
 </project>

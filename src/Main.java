@@ -25,26 +25,26 @@ public class Main {
         dlList.listAdd(new Book("Harry Potter", "JK Rowling", 12.30));
         dlList.listAdd(new Book("Never Let Me Go", "Ishua Kaje", 45.25));
         dlList.listAdd(new Book("Brooklyn", "Honey Bee", 17.90));
-//        System.out.println(dlList.toString());
-//        dlList.listRemove(0);
-//        dlList.listRemove(0);
-//        dlList.listRemove(0);
-//        System.out.println(dlList.toString());
+        System.out.println(dlList.toString());
+        dlList.listRemove(0);
+        dlList.listRemove(0);
+        dlList.listRemove(0);
+        System.out.println(dlList.toString());
 
         DLListGeneric dlListGeneric = new DLListGeneric();
         dlListGeneric.listAdd(word);
         dlListGeneric.listAdd(word2);
-        System.out.println(dlListGeneric.toString());
+//        System.out.println(dlListGeneric.toString());
         dlListGeneric.listRemove(1);
-        System.out.println(dlListGeneric.toString());
+//        System.out.println(dlListGeneric.toString());
 
-        //todo: fix the remove function
+
         System.out.println("------------");
         AListGeneric aListGeneric = new AListGeneric();
         aListGeneric.listAdd(word);
         aListGeneric.listAdd(word2);
         System.out.println(aListGeneric.toString());
-        aListGeneric.listRemove(1);
+        aListGeneric.listRemove(0);
         System.out.println("removed list :");
         System.out.println(aListGeneric.toString());
 
