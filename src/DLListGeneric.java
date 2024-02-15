@@ -35,6 +35,9 @@ public class DLListGeneric<T> {
             return;
         }
 
+                //H
+        //null  > 1 > null
+        // 2 > 3 > 5 > 6 > 1
         if(pos == 0){
             head = head.next; //move the first node to the value behind it
             if(head != null){

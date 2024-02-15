@@ -22,11 +22,14 @@ public class DLList {
             head = newNode;
         } else {
             DLNode current = head;
-            while(current.next != null){ //shifts values down
+            while(current.next != null){ //shifts the pointing of the current node down
                 current = current.next;
             }
             current.next = newNode; //last available node is assigned the new data
             newNode.prev = current; //points the last node to the current node (new data)
+
+            //head = 1 newNode = 3 --> 3 > 1
+            //newNode = 4 --> 4 > 3 > 1
         }
     }
 
@@ -61,8 +64,8 @@ public class DLList {
         StringBuilder sb = new StringBuilder();
         DLNode current = head;
         while (current != null) {
-            sb.append(current.data.toString()).append("\n");
-            current = current.next;
+            sb.append(current.data.toString()).append("\n"); //prints the current string
+            current = current.next; //moves to the next data value
         }
         return sb.toString();
     }
